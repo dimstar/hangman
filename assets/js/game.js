@@ -51,7 +51,7 @@ var elementList = {
     guessesLeft: "guesses-left",
     winCounter: "win-counter",
     lossCounter: "loss-counter",
-}
+};
 
 //@todo THESE ARE BOGUS ---> create a global object which is responsible for transforming the frontend 
     // get all frontend elements
