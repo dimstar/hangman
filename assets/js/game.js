@@ -16,14 +16,29 @@ var game = {
         'The Good The Bad and The Ugly',
         'Tombstone',
         'A Fistfull of Dollars'
-    ]
+    ],
+    round: 0
 }
 
 // create a global object which is responsible for taking inputs from the user
     // listen to and handle jey strokes
     // process the input & send values to the game state object
 var actions = {
+    initHangman: function(){
 
+    },
+    sendKey: document.onkeydown = function(event){
+        console.log(event.key)
+    },
+    updateState: function(){
+
+    },
+    setWord: function(){
+
+    },
+    roundEnd: function(){
+        
+    }
 }
 
 // create a global object which is responsible for transforming the frontend 
@@ -37,3 +52,12 @@ var interface = {
     winCounter: document.getElementById("win-counter"),
     lossCounter: document.getElementById("loss-counter")
 }
+
+
+// Our initialization of the game
+(function() {
+    // your page initialization code here
+    // the DOM will be available here
+    actions.initHangman()
+
+ })();
