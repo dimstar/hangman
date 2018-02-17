@@ -18,7 +18,7 @@ var game = {
         'A Fistfull of Dollars'
     ],
     round: 0
-}
+};
 
 // create a global object which is responsible for taking inputs from the user
     // listen to and handle jey strokes
@@ -37,9 +37,9 @@ var actions = {
 
     },
     roundEnd: function(){
-        
+
     }
-}
+};
 
 // create a global object which is responsible for transforming the frontend 
     // get all frontend elements
@@ -51,13 +51,13 @@ var interface = {
     guessesLeft: document.getElementById("guesses-left"),
     winCounter: document.getElementById("win-counter"),
     lossCounter: document.getElementById("loss-counter")
-}
+};
 
 
 // Our initialization of the game
 (function() {
     // your page initialization code here
     // the DOM will be available here
-    actions.initHangman()
-
- })();
+    // actions.initHangman()
+    alert('test');
+})();
