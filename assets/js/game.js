@@ -25,7 +25,7 @@ var game = {
     // process the input & send values to the game state object
 var actions = {
     initHangman: function(){
-
+        
     },
     sendKey: document.onkeydown = function(event){
         console.log(event.key)
@@ -34,24 +34,29 @@ var actions = {
 
     },
     setWord: function(){
-
+        var ourWord = game.words[game.round]
+        this.getElement(elementList.wordBlanks).innerHTML = ourWord
     },
     roundEnd: function(){
 
+    },
+    getElement: function(id){
+        return document.getElementById(id);
     }
 };
 
-// create a global object which is responsible for transforming the frontend 
+var elementList = {
+    wordBlanks: "word-blanks",
+    wrongGuesses: "wrong-guesses",
+    guessesLeft: "guesses-left",
+    winCounter: "win-counter",
+    lossCounter: "loss-counter",
+}
+
+//@todo THESE ARE BOGUS ---> create a global object which is responsible for transforming the frontend 
     // get all frontend elements
     // recieve values from the game state object
     // transform the frontend elements based on game state
-var interface = {
-    wordBlanks: document.getElementById("word-blanks"),
-    wrongGuesses: document.getElementById("wrong-guesses"),
-    guessesLeft: document.getElementById("guesses-left"),
-    winCounter: document.getElementById("win-counter"),
-    lossCounter: document.getElementById("loss-counter")
-};
 
 
 // Our initialization of the game
@@ -59,5 +64,6 @@ var interface = {
     // your page initialization code here
     // the DOM will be available here
     // actions.initHangman()
-    alert('test');
+    // alert('test');
+    actions.setWord()
 })();
