@@ -22,6 +22,10 @@ h1 {
     color: white !important;
 }
 
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 56px !important;
+}
+
 .panel-body, .panel-heading {
     padding: 18px;
 }
