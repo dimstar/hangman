@@ -1,0 +1,47 @@
+* {
+    font-family: sans-serif !important;
+    text-transform: uppercase;
+    border-radius: 0 !important;
+    border: 0 !important;
+    color: #3D2B3A !important;
+}
+
+h1 {
+    font-family: 'Rye', cursive !important;
+    color: white !important;
+}
+
+.panel-heading strong {
+    font-family: 'Rye', cursive !important;
+    color: white !important;
+    font-size: 22px;
+}
+
+.jumbotron, .panel-heading {
+    background: #BF7E68 !important;
+    color: white !important;
+}
+
+.panel-body, .panel-heading {
+    padding: 18px;
+}
+
+#word-blanks {
+    font-size: 18px;
+}
+
+.container {
+    max-width: 65%;
+    margin-right: 12px;
+    margin-left: auto;
+}
+
+body {
+    background: url(../img/clint.jpg) no-repeat left top #bdd4e5
+
+}
+
+#word-blanks {
+    letter-spacing: 2px;
+}
+
